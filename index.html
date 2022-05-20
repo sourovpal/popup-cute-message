@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="cute-alert.css">
+</head>
+<body>
+
+<script type="text/javascript" src="cute-alert.js"></script>
+<script type="text/javascript">
+// 	cuteAlert({
+//   type: "success",
+//   title: "Success Title",
+//   message: "Success Message",
+//   buttonText: "Okay"
+// })
+
+// cuteAlert({
+//   type: "error",
+//   title: "Error Title",
+//   message: "Error Message",
+//   buttonText: "Okay"
+// })
+
+// cuteAlert({
+//   type: "warning",
+//   title: "Warning Title",
+//   message: "Warning Message",
+//   buttonText: "Okay"
+// })
+
+// cuteAlert({
+//   type: "info",
+//   title: "Info Title",
+//   message: "Info Message",
+//   buttonText: "Okay"
+// }).then(() => {
+//   // do something
+// })
+
+cuteAlert({
+  type: "question",
+  title: "Confirm Title",
+  message: "Confirm Message",
+  confirmText: "Okay",
+  cancelText: "Cancel"
+}).then((e)=>{
+  	if (e)
+  	{
+  		alert('Confirm');
+	}
+	else
+	{
+    	alert('Not Confirm');
+  	}
+});
+
+// cuteToast({
+//   type: "success", // or 'info', 'error', 'warning'
+//   message: "Toast Message",
+//   timer: 5000
+// })
+
+</script>
+</body>
+</html>
